@@ -1,0 +1,92 @@
+#绘制国旗
+import turtle as t
+t.screensize(600,400,"black")
+t.speed(10)
+t.pensize(0.2)
+#画红旗
+t.penup()
+t.goto(-150,-100)
+t.pencolor("red")
+t.pendown()
+t.begin_fill()
+t.color("red")
+t.fd(300)
+t.left(90)
+t.fd(200)
+t.left(90)
+t.fd(300)
+t.left(90)
+t.fd(200)
+t.end_fill()
+#画大五角星
+t.penup()
+t.goto(-100,80)#去大五星的顶点
+t.pencolor("yellow")
+t.pendown()
+t.seth(-72)
+t.begin_fill()
+t.color("yellow")#画大五星
+for i in range(5):
+    t.fd(48.54)#大五星边长
+    t.right(144)
+t.end_fill()
+#画1号小五星
+t.penup()
+t.goto(-50,80)
+t.pencolor("yellow")
+t.seth(-149)
+t.pendown()
+t.fd(10)
+t.right(162)
+t.begin_fill()
+t.color("yellow")
+for i in range(5):
+    t.fd(16.2)
+    t.right(144)
+t.end_fill()
+#画2号小五星
+t.penup()
+t.goto(-30,60)
+t.pencolor("yellow")
+t.seth(-172)
+t.pendown()
+t.fd(10)
+t.right(162)
+t.begin_fill()
+t.color("yellow")
+for i in range(5):
+    t.fd(16.2)
+    t.right(144)
+t.end_fill()
+#画3号小五星
+t.penup()
+t.goto(-30,30)
+t.pencolor("yellow")
+t.seth(164)
+t.pendown()
+t.fd(10)
+t.right(162)
+t.begin_fill()
+t.color("yellow")
+for i in range(5):
+    t.fd(16.2)
+    t.right(144)
+t.end_fill()
+#画4号小五星
+t.penup()
+t.goto(-50,10)
+t.pencolor("yellow")
+t.seth(143)
+t.pendown()
+t.fd(10)
+t.right(162)
+t.begin_fill()
+t.color("yellow")
+for i in range(5):
+    t.fd(16.2)
+    t.right(144)
+t.end_fill()
+#隐藏画笔
+t.hideturtle()
+t.done()
+
